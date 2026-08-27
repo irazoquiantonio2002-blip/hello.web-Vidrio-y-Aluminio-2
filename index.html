@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===================== SEO ===================== -->
+  <title>Vidrio y Aluminio | Ventanas, Puertas, Canceles y Mosquiteros a la Medida</title>
+  <meta name="description" content="Vidrio y Aluminio: fabricación e instalación de ventanas, puertas, canceles de baño y mosquiteros de aluminio y vidrio a la medida para hogar y negocio. Acabado premium, calidad y durabilidad garantizadas. Solicita tu cotización.">
+  <meta name="keywords" content="vidrio y aluminio, ventanas de aluminio, puertas de aluminio, canceles de baño, mosquiteros, cancelería de aluminio, cerramientos corredizos, aluminio y vidrio a la medida, residencial y comercial">
+  <meta name="author" content="Vidrio y Aluminio">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vidrio y Aluminio | Ventanas, Puertas, Canceles y Mosquiteros a la Medida">
+  <meta property="og:description" content="Fabricación e instalación de aluminio y vidrio a la medida para hogar y negocio. Acabado premium, calidad y durabilidad garantizadas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero-fachada-comercial.jpg">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Progressive enhancement: si JS está disponible se habilitan las
+       animaciones de entrada; si no, todo el contenido queda visible. -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <!-- Marca: marco de aluminio + cristal -->
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="4.5" y="4.5" width="39" height="39" rx="8" stroke="currentColor" stroke-width="3"/>
+        <path d="M24 5v38M5 24h38" stroke="currentColor" stroke-width="3"/>
+        <path d="M8 40 40 8" stroke="var(--gold)" stroke-width="3.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Vidrio y Aluminio</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Vidrio y Aluminio — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="4.5" y="4.5" width="39" height="39" rx="8" stroke="currentColor" stroke-width="3"/>
+              <path d="M24 5v38M5 24h38" stroke="currentColor" stroke-width="3"/>
+              <path d="M8 40 40 8" stroke="var(--gold)" stroke-width="3.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Vidrio y Aluminio</span>
+            <span>A la medida</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Ventajas</a></li>
+            <li><a href="#ambientes">Productos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Ventajas</a>
+      <a href="#ambientes">Productos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Cotización →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Imagen de fondo (fachada comercial de cristal y aluminio) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Capas de oscurecimiento -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Textura de retícula (perfilería) -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Partículas / polvo de cristal -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Haces de luz que entran por el vidrio -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Grano de película -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- Barrido de revelado (una sola vez) -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Aluminio · Vidrio · Residencial y Comercial
+          </div>
+
+          <!-- Título animado -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Diseño claro,</span></span>
+            <span class="line"><span>estructura</span></span>
+            <span class="line"><span class="accent">que perdura.</span></span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="hero-sub" id="hero-sub">
+            Fabricamos e instalamos <strong>ventanas, puertas, canceles y mosquiteros</strong> de aluminio y vidrio a la medida. Acabado premium, atención al detalle y durabilidad garantizada para tu hogar o negocio.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-regular fa-square" style="font-size:15px; color:var(--gray);"></i>
+              Ver Productos
+            </a>
+          </div>
+
+          <!-- Barra de confianza -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Calidad garantizada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-ruler-combined"></i>
+              Fabricación a medida
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Instalación profesional
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Ventajas
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia</div>
+            <h2 class="why-quote" id="why-heading">
+              La calidad no siempre se nota a primera vista…
+              <em> casi siempre está en los acabados.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos perfil de aluminio de alta resistencia con vidrio de calidad y una instalación cuidada al milímetro, para que cada ventana, puerta o cancel luzca impecable y funcione durante años.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-ruler-combined"></i>
+            </div>
+            <h3>Fabricación a la Medida</h3>
+            <p>Cada proyecto se fabrica según las medidas exactas y el estilo de tu espacio. Sin soluciones genéricas.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3>Hogar y Negocio</h3>
+            <p>Desde una recámara hasta locales comerciales y obra nueva: soluciones para el sector residencial y comercial.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3>Acabado Premium</h3>
+            <p>Perfilería alineada, sellado limpio y herrajes de calidad. Un terminado estético que suma valor a tu propiedad.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Calidad y Durabilidad</h3>
+            <p>Materiales que resisten el uso diario, la humedad y el sol. Instalaciones pensadas para durar.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Productos (imágenes reales de proyectos)
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros productos</div>
+            <h2 class="section-title" id="amb-heading">
+              No todos los trabajos<br>
+              <span class="gold">tienen el mismo acabado</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Elige el producto correcto para cada espacio: iluminación natural, privacidad, seguridad o diseño.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesitas?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Ventanas -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="img/ventana-aluminio-arco.jpg"
+              alt="Ventana de aluminio con arco y cristal, fabricación a la medida por Vidrio y Aluminio">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(65,184,212,0.15); border-color:rgba(127,220,238,0.4);"
+                   aria-hidden="true">
+                <i class="fa-regular fa-window-maximize" style="color:#7fdcee;"></i>
+              </div>
+              <h3>Ventanas de Aluminio</h3>
+              <p>Corredizas, abatibles y fijas. Aprovechan la luz natural y mejoran el aislamiento de cada habitación. Con opción de mosquitero integrado.</p>
+              <div class="amb-temp">Corrediza · Abatible · Fija</div>
+            </div>
+          </div>
+
+          <!-- Puertas y canceles -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="img/puerta-corrediza-cristal.jpg"
+              alt="Puerta corrediza de cristal con marco de aluminio blanco instalada por Vidrio y Aluminio">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-door-open" style="color:white;"></i>
+              </div>
+              <h3>Puertas y Canceles</h3>
+              <p>Puertas corredizas y abatibles en cristal y aluminio para interiores, patios y locales comerciales.</p>
+              <div class="amb-temp">Corrediza · Abatible · Comercial</div>
+            </div>
+          </div>
+
+          <!-- Canceles de baño -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="img/cancel-bano-negro.jpg"
+              alt="Cancel de baño de aluminio con vidrio y marco negro, instalación a la medida de Vidrio y Aluminio">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(65,184,212,0.15); border-color:rgba(127,220,238,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-bath" style="color:#7fdcee;"></i>
+              </div>
+              <h3>Canceles de Baño</h3>
+              <p>Cerramientos para regadera en aluminio y vidrio, a la medida del espacio. Marcos en blanco, negro y aluminio natural.</p>
+              <div class="amb-temp">Vidrio · A medida · Fácil limpieza</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Claro, puntual y <span class="gold">a la medida</span>
+          </h2>
+          <p>De la visita de medición a la instalación final, acompañamos cada paso para que el resultado quede exactamente como lo imaginaste.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Visita y Medición</h3>
+            <p>Tomamos medidas exactas en sitio, revisamos el tipo de vidrio y perfil ideal y resolvemos tus dudas. Sin costo ni compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Cotización a Detalle</h3>
+            <p>Recibes una propuesta clara con materiales, tipo de cristal, color de perfil y tiempo de entrega. Precio transparente.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Fabricación e Instalación</h3>
+            <p>Fabricamos tu proyecto y lo instalamos con acabado limpio. Revisamos contigo cada detalle antes de entregar.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO DESTACADO
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Producto Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Cerramientos corredizos<br>
+              <span class="gold">en aluminio y vidrio</span>
+            </h2>
+            <p class="producto-lead">
+              Nuestra línea corrediza combina perfil de aluminio reforzado, cristal de calidad y rieles de deslizamiento suave. Ideal para patios, estancias y locales que buscan más luz sin perder seguridad.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características de los cerramientos corredizos">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-regular fa-sun"></i></div>
+                <div>
+                  <h4>Máxima entrada de luz</h4>
+                  <p>Perfiles delgados y hojas amplias para aprovechar la iluminación natural.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Seguridad reforzada</h4>
+                  <p>Cerraduras y perfiles robustos para un cierre firme en accesos y patios.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-wind"></i></div>
+                <div>
+                  <h4>Ventilación con mosquitero</h4>
+                  <p>Opción de mosquitero integrado para ventilar sin insectos.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-droplet"></i></div>
+                <div>
+                  <h4>Resistente a la intemperie</h4>
+                  <p>Sellado y herrajes que soportan humedad, polvo y sol.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Detalles del producto">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">A medida</span>
+                <span class="spec-name">Dimensiones</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Aluminio</span>
+                <span class="spec-name">Perfilería</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Vidrio</span>
+                <span class="spec-name">Cristal</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">3 colores</span>
+                <span class="spec-name">Acabados</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Puerta corrediza de aluminio y vidrio con mosquitero, fabricada por Vidrio y Aluminio">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Corredizo — deslizamiento suave
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-check" style="color:var(--gold);"></i>
+                Residencial y comercial
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — sección CON imagen de fondo
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos clave de Vidrio y Aluminio">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100 por ciento">100%</div>
+            <div class="stat-lbl">Fabricación<br>a la medida</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="4" data-suffix=""
+                 aria-label="4 líneas de producto">4</div>
+            <div class="stat-lbl">Líneas de producto:<br>ventana, puerta, cancel, mosquitero</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="2 sectores">2</div>
+            <div class="stat-lbl">Sectores atendidos:<br>residencial y comercial</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="3" data-suffix=""
+                 aria-label="3 acabados de perfil">3</div>
+            <div class="stat-lbl">Acabados de perfil:<br>blanco, negro y natural</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — sección SIN imagen de fondo
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Dónde instalamos</div>
+          <h2 class="section-title" id="sec-heading">
+            Soluciones para <span class="gold">cada espacio</span>
+          </h2>
+          <p>Trabajamos en casas, remodelaciones y espacios comerciales, adaptándonos a cada tipo de obra.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Casas</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Departamentos</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Locales comerciales</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-helmet-safety sector-icon" aria-hidden="true"></i>
+            <h3>Obra nueva</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-screwdriver-wrench sector-icon" aria-hidden="true"></i>
+            <h3>Remodelaciones</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Cotiza tu <span class="gold">proyecto</span>
+          </h2>
+          <p>Cuéntanos qué necesitas y te enviamos una cotización a la medida. Respuesta rápida por WhatsApp.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención personalizada</h3>
+            <p class="ci-sub">Fabricación e instalación de aluminio y vidrio para hogar y negocio.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Medición sin costo</h4>
+                  <p>Agenda una visita para tomar medidas exactas, sin compromiso.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Fabricación e instalación</h4>
+                  <p>Nos encargamos del proyecto completo: de la medición a la instalación final.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos a la medida en minutos.</p>
+                  <!-- Reemplazar el número por el WhatsApp real del negocio -->
+                  <a href="https://wa.me/520000000000" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Ventanas de aluminio</option>
+                    <option>Puertas y cancelería</option>
+                    <option>Canceles de baño</option>
+                    <option>Mosquiteros</option>
+                    <option>Proyecto comercial / obra</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del proyecto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe el espacio, medidas aproximadas, tipo de vidrio o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="4.5" y="4.5" width="39" height="39" rx="8" stroke="currentColor" stroke-width="3"/>
+            <path d="M24 5v38M5 24h38" stroke="currentColor" stroke-width="3"/>
+            <path d="M8 40 40 8" stroke="var(--gold)" stroke-width="3.2" stroke-linecap="round"/>
+          </svg>
+          <span>Vidrio y Aluminio</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Vidrio y Aluminio. Todos los derechos reservados. Fabricación e instalación de aluminio y vidrio a la medida.
+        </p>
+        <div class="footer-socials">
+          <!-- Reemplazar el número por el WhatsApp real del negocio -->
+          <a href="https://wa.me/520000000000" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       WHATSAPP FLOTANTE
+  ══════════════════════════════════════════════════════ -->
+  <!-- Reemplazar el número por el WhatsApp real del negocio -->
+  <a href="https://wa.me/520000000000?text=Hola%2C%20vi%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20una%20cotizaci%C3%B3n%20de%20aluminio%20y%20vidrio."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
