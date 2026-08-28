@@ -7,9 +7,8 @@
   'use strict';
 
   /* Número de WhatsApp del negocio.
-     Formato: 52 (país) + 10 dígitos, sin espacios ni signos.
-     ↓↓↓  REEMPLAZAR POR EL NÚMERO REAL DE VIDRIO Y ALUMINIO  ↓↓↓ */
-  var WHATSAPP_NUMBER = '520000000000';
+     Formato: 52 (país) + 10 dígitos, sin espacios ni signos. */
+  var WHATSAPP_NUMBER = '526141691450';
 
   /* ---------- Ocultar el loader al terminar de cargar ---------- */
   window.addEventListener('load', function () {
